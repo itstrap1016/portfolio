@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+@theme {
+  --color-main: #e5e7eb;
+  --color-sub: #94a3b8;
+  --color-sub02: #64748b;
+  --color-point: #5eead4;
+  --color-point02: rgba(19, 78, 74, 0.5);
+  --color-border: #e2e8f01a;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #0f172a;
+  color: #94a3b8;
+  font-family: "Noto Sans KR", sans-serif;
+}

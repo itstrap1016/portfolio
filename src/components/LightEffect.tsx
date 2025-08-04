@@ -1,0 +1,31 @@
+// components/SpotlightEffect.tsx
+import { motion } from "framer-motion";
+import { useState } from "react";
+
+function LightEffect({ children }: { children: React.ReactNode }) {
+  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+
+  const handleMouseMove = (e: React.MouseEvent) => {
+    setMousePosition({
+      x: e.clientX,
+      y: e.clientY,
+    });
+  };
+
+  return (
+    <div className="relative min-h-screen" onMouseMove={handleMouseMove}>
+      <motion.div
+        className="fixed inset-0 pointer-events-none z-10"
+        style={{
+          background: `radial-gradient(600px circle at ${mousePosition.x}px ${mousePosition.y}px, rgba(36, 99, 188, 0.15), rgba(36, 99, 188, 0.05) 40%, transparent 80%)`,
+        }}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.3 }}
+      />
+      {children}
+    </div>
+  );
+}
+
+export default LightEffect;
