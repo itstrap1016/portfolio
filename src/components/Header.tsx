@@ -117,9 +117,8 @@ function Header() {
             Front End Engineer
           </h2>
           <p className="">
-            I build accessible, pixel-perfect digital
-            <br />
-            experiences for the web.
+            사용자 중심의 완성도 높은
+            <br />웹 서비스를 개발합니다.
           </p>
         </section>
         <nav>
@@ -149,10 +148,10 @@ function Header() {
       <section>
         <h2 className="sr-only">LINKS</h2>
         <ul className="flex items-center gap-4">
-          <LinkBtn href="#">
+          <LinkBtn href="https://github.com/itstrap1016">
             <FaGithub className="w-full h-full hover:text-main" />
           </LinkBtn>
-          <LinkBtn href="#">
+          <LinkBtn href="https://velog.io/@itstrap1016/posts">
             <SiVelog className="w-full h-full hover:text-main" />
           </LinkBtn>
         </ul>
