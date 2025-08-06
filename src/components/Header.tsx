@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { FaGithub } from "react-icons/fa";
 import { SiVelog } from "react-icons/si";
+import { FiExternalLink } from "react-icons/fi";
 
 interface NavBtnProps {
   href: string;
@@ -155,6 +156,15 @@ function Header() {
             <SiVelog className="w-full h-full hover:text-main" />
           </LinkBtn>
         </ul>
+        <a
+          href="/resume.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-2 text-sm font-medium text-main border border-main/20 rounded-lg px-4 py-2 hover:bg-main/5 hover:border-main/40 transition-all duration-150 mt-5"
+        >
+          <span>이력서 전체보기</span>
+          <FiExternalLink className="w-3 h-3" />
+        </a>
       </section>
     </header>
   );
