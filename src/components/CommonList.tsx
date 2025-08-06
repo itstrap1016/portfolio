@@ -43,12 +43,12 @@ function List({ image, date, title, content, skills, linkUrl }: ListProps) {
         </div>
       )}
       {date && (
-        <div>
+        <div className="w-[130px] text-center">
           <span className="text-sub02 text-sm font-medium">{date}</span>
         </div>
       )}
       <div className="flex flex-col">
-        <div className="max-w-[380px]">
+        <div className="max-w-[480px]">
           <h3
             className={`text-main mb-2 font-medium ${
               linkUrl &&

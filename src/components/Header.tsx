@@ -106,7 +106,7 @@ function Header() {
   }, []);
 
   return (
-    <header className="w-[640px] pl-10 pr-5 py-20 min-h-screen max-h-screen flex flex-col justify-between sticky top-0">
+    <header className="w-[540px] pl-10 pr-5 py-20 min-h-screen max-h-screen flex flex-col justify-between sticky top-0">
       <section>
         <section className="mb-16">
           <h1 className="text-5xl font-bold mb-3 text-main">HanSeung Lee</h1>
@@ -114,7 +114,9 @@ function Header() {
             Front End Engineer
           </h2>
           <p className="">
-            I build accessible, pixel-perfect digital experiences for the web.
+            I build accessible, pixel-perfect digital
+            <br />
+            experiences for the web.
           </p>
         </section>
         <nav>
