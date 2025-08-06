@@ -106,11 +106,13 @@ function Header() {
   }, []);
 
   return (
-    <header className="w-[540px] pl-10 pr-5 py-20 min-h-screen max-h-screen flex flex-col justify-between sticky top-0">
+    <header className="w-[540px] pl-10 pr-5 py-20 min-h-screen max-h-screen flex flex-col justify-between sticky top-0 max-lg:min-h-auto max-lg:static max-lg:w-full max-lg:px-0 max-lg:py-0">
       <section>
-        <section className="mb-16">
-          <h1 className="text-5xl font-bold mb-3 text-main">HanSeung Lee</h1>
-          <h2 className="text-xl font-medium mb-4 text-main">
+        <section className="mb-16 max-lg:mb-8">
+          <h1 className="text-5xl font-bold mb-3 text-main max-sm:text-4xl">
+            HanSeung Lee
+          </h1>
+          <h2 className="text-xl font-medium mb-4 text-main max-sm:text-lg">
             Front End Engineer
           </h2>
           <p className="">
@@ -121,7 +123,7 @@ function Header() {
         </section>
         <nav>
           <h2 className="sr-only">Navigation</h2>
-          <ul>
+          <ul className="max-lg:hidden">
             <NavBtn
               name="ABOUT"
               href="#about"
@@ -145,7 +147,7 @@ function Header() {
       </section>
       <section>
         <h2 className="sr-only">LINKS</h2>
-        <ul className="flex items-center gap-5">
+        <ul className="flex items-center gap-4">
           <LinkBtn href="#">
             <FaGithub className="w-full h-full hover:text-main" />
           </LinkBtn>

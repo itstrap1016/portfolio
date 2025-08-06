@@ -1,7 +1,11 @@
 function Intro() {
   return (
-    <section id="about">
-      <h2 className="sr-only">자기소개</h2>
+    <section id="about" className="px-5 max-lg:px-0">
+      <h2
+        className={`hidden text-xl text-main font-bold mb-9 max-lg:block max-sm:mb-6`}
+      >
+        ABOUT
+      </h2>
       <p className="mb-4">
         I’m a developer passionate about crafting accessible, pixel-perfect user
         interfaces that blend thoughtful design with robust engineering. My
