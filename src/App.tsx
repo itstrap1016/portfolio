@@ -14,8 +14,16 @@ function App() {
         <Header />
         <MainLayout>
           <Intro />
-          <CommonLists heading="경력 리스트" data={careerData} />
-          <CommonLists heading="프로젝트 리스트" data={projectData} />
+          <CommonLists
+            heading="경력 리스트"
+            data={careerData}
+            id="experience"
+          />
+          <CommonLists
+            heading="프로젝트 리스트"
+            data={projectData}
+            id="project"
+          />
         </MainLayout>
       </Layout>
     </LightEffect>

@@ -1,6 +1,6 @@
 function Intro() {
   return (
-    <section>
+    <section id="about">
       <h2 className="sr-only">자기소개</h2>
       <p className="mb-4">
         I’m a developer passionate about crafting accessible, pixel-perfect user

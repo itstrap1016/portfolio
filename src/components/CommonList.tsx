@@ -3,6 +3,7 @@ import { FiExternalLink } from "react-icons/fi";
 interface CommonListsProps {
   data: ListProps[];
   heading: string;
+  id: string;
 }
 
 interface ListProps {
@@ -37,7 +38,7 @@ function List({ image, date, title, content, skills, linkUrl }: ListProps) {
       onClick={handleClick}
     >
       {image && (
-        <div className="w-[120px] h-[70px] outline-2 outline-border rounded-[2px] mt-2">
+        <div className="w-[130px] h-[80px] outline-2 outline-border rounded-[2px] mt-2">
           <img src={image} alt={title} className="block w-full h-full" />
         </div>
       )}
@@ -71,11 +72,11 @@ function List({ image, date, title, content, skills, linkUrl }: ListProps) {
   );
 }
 
-function CommonLists({ data, heading }: CommonListsProps) {
+function CommonLists({ data, heading, id }: CommonListsProps) {
   return (
-    <section>
+    <section id={id}>
       <h2 className="sr-only">{heading}</h2>
-      <ul className="flex flex-col gap-12 p-3">
+      <ul className="flex flex-col gap-12">
         {data.map((item, index) => (
           <List {...item} key={index} />
         ))}
