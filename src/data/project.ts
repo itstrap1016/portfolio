@@ -9,6 +9,15 @@ export const projectData = [
     githubLinkUrl: "https://github.com/GenAIJobScape/JobScape",
   },
   {
+    image: "/images/weather.jpg",
+    title: "Weather App - 개인 프로젝트",
+    content:
+      "실시간 날씨 정보를 제공하는 반응형 웹 애플리케이션입니다. Clean Architecture 패턴을 적용하여 Domain-Application-Infrastructure-Presentation 4계층으로 구조화했으며, TypeScript와 React를 기반으로 타입 안전성과 확장성을 보장했습니다. TanStack Query를 활용한 서버 상태 관리와 데이터 캐싱 최적화, Tailwind CSS를 통한 모바일 퍼스트 반응형 디자인을 구현했습니다. OpenWeather API를 연동하여 현재 날씨, 5일 예보, 24시간 예보, 대기질 정보를 제공하며, 다중 단위 변환(온도/풍속/기압), 도시 검색 및 저장, GPS 기반 위치 서비스 등의 기능을 포함합니다.",
+    skills: ["React", "Typescript", "Tailwind CSS", "Tanstack Query"],
+    linkUrl: "https://itstrap1016.github.io/weather-app/",
+    githubLinkUrl: "https://github.com/itstrap1016/weather-app",
+  },
+  {
     image: "/images/tripic.jpg",
     title: "Tripic - 부트캠프 팀 프로젝트",
     content:
