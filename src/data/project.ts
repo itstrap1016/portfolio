@@ -4,7 +4,7 @@ export const projectData = [
     title: "AI 일자리 시각화 - 팀 프로젝트",
     content:
       "생성형 AI 시대의 일자리 변화를 데이터 기반으로 분석하고 시각화하는 웹 애플리케이션입니다. 팀 프로젝트로 진행되었으며, React와 TypeScript를 활용한 모던 웹 기술 스택을 적용했습니다. Chart.js를 통한 인터랙티브 데이터 시각화, GitHub Actions를 이용한 자동 배포 시스템 구축, 그리고 반응형 웹 디자인을 구현하여 다양한 디바이스에서 최적화된 사용자 경험을 제공합니다. 실제 고용 통계 데이터를 기반으로 AI 기술 발전이 노동 시장에 미치는 영향을 다각도로 분석하고, 사용자가 직관적으로 이해할 수 있도록 다양한 차트와 그래프로 표현했습니다.",
-    skills: ["React", "Typescript", "Chart.js"],
+    skills: ["React", "Typescript", "Tailwind CSS", "Chart.js"],
     linkUrl: "https://www.job-ai.co.kr/",
     githubLinkUrl: "https://github.com/GenAIJobScape/JobScape",
   },
