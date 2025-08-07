@@ -156,7 +156,7 @@ function Header() {
           </LinkBtn>
         </ul>
         <a
-          href="/resume.pdf"
+          href="/portfolio/resume.pdf"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center gap-2 text-sm font-medium text-main border border-main/20 rounded-lg px-4 py-2 hover:bg-main/5 hover:border-main/40 transition-all duration-150 mt-5"
